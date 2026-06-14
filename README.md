@@ -23,6 +23,8 @@ security-scanner/
 ├── scanner.py            # Main application source code
 ├── vulnerable.py         # Target file for testing/auditing
 └── README.md             # Documentation
+```
+
 Installation & Setup
 1. Clone the Repository
 Bash
