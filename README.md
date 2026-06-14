@@ -60,7 +60,6 @@ python scanner.py vulnerable.py
 
 Example Output Format
 
-Plaintext
 ---
 SEVERITY: CRITICAL
 TYPE: SQL Injection
