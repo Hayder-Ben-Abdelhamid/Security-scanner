@@ -29,6 +29,8 @@ Installation & Setup
 git clone [https://github.com/Hayder-Ben-Abdelhamid/Security-scanner.git](https://github.com/Hayder-Ben-Abdelhamid/Security-scanner.git)
 cd Security-scanner
 
+---
+
 2. Set Up a Virtual Environment
 python -m venv venv
 # On Windows:
@@ -36,8 +38,12 @@ venv\Scripts\activate
 # On Linux/macOS:
 source venv/bin/activate
 
+---
+
 3. Install Dependencies
 pip install python-dotenv google-genai colorama
+
+---
 
 4. Configure Environment Variables
 Duplicate the example template and create your localized .env configuration file:
