@@ -30,6 +30,7 @@ Installation & Setup
 Bash
 git clone [https://github.com/Hayder-Ben-Abdelhamid/Security-scanner.git](https://github.com/Hayder-Ben-Abdelhamid/Security-scanner.git)
 cd Security-scanner
+
 2. Set Up a Virtual Environment
 Bash
 python -m venv venv
@@ -37,9 +38,11 @@ python -m venv venv
 venv\Scripts\activate
 # On Linux/macOS:
 source venv/bin/activate
+
 3. Install Dependencies
 Bash
 pip install python-dotenv google-genai colorama
+
 4. Configure Environment Variables
 Duplicate the example template and create your localized .env configuration file:
 
@@ -54,7 +57,9 @@ To execute a static analysis check against a target source file, pass the file p
 
 Bash
 python scanner.py vulnerable.py
+
 Example Output Format
+
 Plaintext
 ---
 SEVERITY: CRITICAL
@@ -63,5 +68,6 @@ DESCRIPTION: User input from the URL parameters is directly concatenated into a 
 IMPACT: Remote attackers can manipulate database structures, bypass authentication checks, or extract raw records.
 FIX: Use parameterized inputs / prepared statements instead of string formatting.
 ---
+
 Security Notice
 This repository implements secure design patterns by excluding local operational environments and dynamic access tokens (.env) from global code versioning histories using comprehensive .gitignore filtering. Never check raw secrets directly into code tracking streams.
