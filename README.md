@@ -27,39 +27,46 @@ security-scanner/
 
 Installation & Setup
 1. Clone the Repository
-Bash
+```
 git clone [https://github.com/Hayder-Ben-Abdelhamid/Security-scanner.git](https://github.com/Hayder-Ben-Abdelhamid/Security-scanner.git)
 cd Security-scanner
+```
 
 2. Set Up a Virtual Environment
-Bash
+```
 python -m venv venv
 # On Windows:
 venv\Scripts\activate
 # On Linux/macOS:
 source venv/bin/activate
+```
 
 3. Install Dependencies
-Bash
+```
 pip install python-dotenv google-genai colorama
+```
 
 4. Configure Environment Variables
 Duplicate the example template and create your localized .env configuration file:
 
-Bash
+```
 copy .env.example .env
+```
+
 Open the newly created .env file and insert your API credentials:
 
-Plaintext
+```
 SECRET_API_KEY=your_actual_gemini_api_key_here
+```
+
 Usage
 To execute a static analysis check against a target source file, pass the file path as an argument to the main script:
 
-Bash
+```
 python scanner.py vulnerable.py
+```
 
 Example Output Format
-
 ---
 SEVERITY: CRITICAL
 TYPE: SQL Injection
