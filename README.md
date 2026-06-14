@@ -67,6 +67,7 @@ python scanner.py vulnerable.py
 ```
 
 Example Output Format
+```
 ---
 SEVERITY: CRITICAL
 TYPE: SQL Injection
@@ -74,6 +75,7 @@ DESCRIPTION: User input from the URL parameters is directly concatenated into a 
 IMPACT: Remote attackers can manipulate database structures, bypass authentication checks, or extract raw records.
 FIX: Use parameterized inputs / prepared statements instead of string formatting.
 ---
+```
 
 Security Notice
 This repository implements secure design patterns by excluding local operational environments and dynamic access tokens (.env) from global code versioning histories using comprehensive .gitignore filtering. Never check raw secrets directly into code tracking streams.
